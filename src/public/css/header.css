@@ -1,0 +1,80 @@
+.header {
+    position: absolute;
+    top: 0;
+}
+
+.header .header__container {
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 12px;
+}
+
+.header__container .header--avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+.header__container .header--avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__container .header--avatar,
+.header__container .header--setting{
+    position: relative;
+}
+
+.menu--list {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.2rem);
+    list-style-type: none;
+    padding-inline-start: 0;
+    background: #212121;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+}
+
+.menu--list li {
+    background-color: #212121;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu--list li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+.menu--list li:hover {
+    background-color: #2d2d2d;
+}
+
+.menu--list li a {
+    color: #a3a5a7;
+    text-decoration: none;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.menu--list li i {
+    color: #a3a5a7;
+}
+
+.menu--list.showMenu {
+    display: block;
+}
+
+.menu--list {
+    display: none;
+}
